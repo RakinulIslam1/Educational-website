@@ -1,0 +1,12 @@
+.lottie{
+    width: 100%;  
+    
+     
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.home p{
+    margin-top: 35%;
+}
