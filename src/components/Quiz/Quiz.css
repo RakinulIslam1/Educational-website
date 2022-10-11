@@ -12,6 +12,11 @@
     margin: 20px;
     padding: 10px;
 }
+.quiz:hover{
+    box-shadow: 15px 20px 15px #888888;
+    margin-top: 5px;
+    padding: 3px;
+}
 .card-details{
     display: flex;
     justify-content: space-between;
