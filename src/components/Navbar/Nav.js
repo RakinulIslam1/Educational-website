@@ -9,8 +9,8 @@ export const Nav = () => {
     <div class="bg-gray-900 nav">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label="Company"
             title="Company"
             class="inline-flex items-center"
@@ -33,7 +33,7 @@ export const Nav = () => {
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               CODE BOX
             </span>
-          </a>
+          </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex text-xl">
             <li>
               <Link
@@ -104,7 +104,7 @@ export const Nav = () => {
                 <div class="p-5 bg-white border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <a
+                      <Link
                         href="/"
                         aria-label="Company"
                         title="Company"
@@ -128,7 +128,7 @@ export const Nav = () => {
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           CODE BOX
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
