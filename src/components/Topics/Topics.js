@@ -7,6 +7,13 @@ const Topics = () => {
     const loadData = useLoaderData();
     const datas = loadData.data;
     console.log(datas);
+
+    
+    const quizClick = () =>{
+        console.log('clicked');
+    }
+
+
     return (
       <div>
         <h2 className="text-4xl font-semibold mt-5">
@@ -14,7 +21,11 @@ const Topics = () => {
         </h2>
         <div className="card">
           {datas.map((data) => (
-            <Quiz key={data.id} data={data}></Quiz>
+            <Quiz 
+            key={data.id} 
+            data={data}
+            quizClick={quizClick}
+            ></Quiz>
           ))}
         </div>
       </div>
