@@ -6,13 +6,6 @@ import './Topics.css';
 const Topics = () => {
     const loadData = useLoaderData();
     const datas = loadData.data;
-    // console.log(datas);
-
-    
-    // const quizClick = () =>{
-    //     console.log('clicked');
-    // }
-
 
     return (
       <div>
@@ -24,7 +17,6 @@ const Topics = () => {
             <Quiz 
             key={data.id} 
             data={data}
-            // quizClick={quizClick}
             ></Quiz>
           ))}
         </div>
