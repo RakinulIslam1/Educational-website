@@ -1,12 +1,17 @@
 .lottie{
-    width: 100%;  
+    width: 70%; 
+    margin-left: 15%;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.header{
+    margin-bottom: 0%;
+}
+.topic{
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 10px 8px #888888;
     
-     
-}
-.home{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.home p{
-    margin-top: 35%;
 }
