@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import Topics from './components/Topics/Topics';
 import Statistic from './components/Statistic/Statistic';
 import Blog from './components/Blog/Blog';
-import QA from './components/QA/QA.JS';
+import ShowQuiz from './components/ShowQuiz/ShowQuiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -44,7 +44,7 @@ function App() {
               `https://openapi.programming-hero.com/api/quiz/${params.codeId}`
             );
           },
-          element: <QA></QA>,
+          element: <ShowQuiz></ShowQuiz>,
         }
       ],
     },

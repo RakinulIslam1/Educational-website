@@ -1,10 +1,7 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
 
 
 const QA = () => {
-    const quizs = useLoaderData() 
-    console.log(quizs);   
     
     return (
         <div>
