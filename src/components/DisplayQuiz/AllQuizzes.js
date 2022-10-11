@@ -11,7 +11,7 @@ const AllQuizzes = ({ topicQuiz }) => {
     console.log(topicQuiz);
 const { question, options, correctAnswer } = topicQuiz;
 const icon = () =>{
-  
+
 toast.success( correctAnswer, {
   position: "top-center",
   autoClose: 5000,

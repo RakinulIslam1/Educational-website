@@ -4,6 +4,7 @@ import coding from '../coding.json'
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
       <div>
@@ -56,10 +57,12 @@ const Home = () => {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold text-gray-700 mr-10 mt-5 topic">
-                      <i>
+                      <Link to='/topics'>
+                        <i>
                         VISIT TOPICS FOR MORE{" "}
                         <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>{" "}
                       </i>
+                      </Link>
                     </h2>
                   </div>
                 </div>
