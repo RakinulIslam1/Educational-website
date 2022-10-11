@@ -1,0 +1,17 @@
+.quiz img{
+    background-color: black;
+    width: 300px;
+}
+.quiz{
+    border: 1px solid lightgrey;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
