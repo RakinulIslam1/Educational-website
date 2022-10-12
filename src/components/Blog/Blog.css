@@ -1,0 +1,24 @@
+.text{
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    /* box-shadow: 50px 50px grey; */
+    box-shadow: 10px 15px 10px #888888;
+    
+}
+.p-tag{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.res{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+@media only screen and (max-width: 600px) {
+    .res {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+}

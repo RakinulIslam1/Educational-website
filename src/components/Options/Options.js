@@ -5,21 +5,23 @@ import Swal from "sweetalert2";
 
 
 const Options = ({ option, correctAnswer }) => {
+  // console.log(option);
   const answer = () => {
     const ans = correctAnswer;
     
-    if(ans === correctAnswer){
-        Swal.fire("Good job!", "You clicked the button!", "success");
+    if (ans === correctAnswer) {
+      Swal.fire("Good job!", "You clicked the button!", "success");
     }
-    else{
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-          footer: '<a href="">Why do I have this issue?</a>',
-        });
+    else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="">Why do I have this issue?</a>',
+      });
     }
   };
+  
   
   return (
     <div className="optn  bg-gray-700">
