@@ -4,13 +4,15 @@ import Swal from "sweetalert2";
 
 
 
-const Options = ({ option, correctAnswer }) => {
+const Options = ({ option, correctAnswer, id }) => {
   // console.log(option);
-  const answer = () => {
-    const ans = correctAnswer;
+  const ans = correctAnswer;
+  const wrg = id
+  const answer = (correctAnswer) => {
     
-    if (ans === correctAnswer) {
-      Swal.fire("Good job!", "You clicked the button!", "success");
+    
+    if (ans === correctAnswer || wrg === id) {
+      Swal.fire("Good job!", "Your Answer is correct!", "success");
     }
     else {
       Swal.fire({

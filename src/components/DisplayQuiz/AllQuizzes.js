@@ -9,7 +9,7 @@ import './AllQuizzes.css'
 
 const AllQuizzes = ({ topicQuiz }) => {
     console.log(topicQuiz);
-const { question, options, correctAnswer } = topicQuiz;
+const { id, question, options, correctAnswer } = topicQuiz;
 const icon = () =>{
 
 toast.success( correctAnswer, {
@@ -45,6 +45,7 @@ toast.success( correctAnswer, {
               key={option.id}
               option={option}
               correctAnswer={correctAnswer}
+              id={id}
             ></Options>
           ))}
           <ToastContainer></ToastContainer>

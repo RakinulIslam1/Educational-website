@@ -7,7 +7,7 @@ export const Nav = () => {
 
   return (
     <div class="bg-gray-900 nav">
-      <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div class="relative flex items-center justify-between">
           <NavLink
             to="/"
@@ -100,8 +100,8 @@ export const Nav = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div class="absolute top-0 left-0 w-full">
-                <div class="p-5 bg-white border rounded shadow-sm">
+              <div class="absolute top-0 left-0 w-full z-50">
+                <div class="p-5 bg-white border rounded shadow-sm ">
                   <div class="flex items-center justify-between mb-4">
                     <div>
                       <NavLink

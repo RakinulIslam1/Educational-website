@@ -1,5 +1,19 @@
 # Getting Started with Create React App
 
+<!-- 
+1. Make a navbar and a description.
+2. make router and load data from api.
+3. display quizzes topoic.
+4. display questions with click handler in Get Start button.
+5. show toastify of correct answer when click on eye icon.
+6. tried to display a toastify when click on options.
+7. display a Rechart.
+
+====> Live site Link: 
+ -->
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
