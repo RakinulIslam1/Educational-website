@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Nav.css'
 
 export const Nav = () => {
@@ -7,9 +7,9 @@ export const Nav = () => {
 
   return (
     <div class="bg-gray-900 nav">
-      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-          <Link
+          <NavLink
             to="/"
             aria-label="Company"
             title="Company"
@@ -33,47 +33,47 @@ export const Nav = () => {
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               CODE BOX
             </span>
-          </Link>
+          </NavLink>
           <ul className="flex items-center hidden space-x-8 lg:flex text-xl">
             <li>
-              <Link
+              <NavLink
                 to="/home"
                 aria-label="Our product"
                 title="Home"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/topics"
                 aria-label="Our product"
                 title="Topics"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Topics
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/statistic"
                 aria-label="Product pricing"
                 title="Statistic"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Statistic
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/blog"
                 aria-label="About us"
                 title="Blog"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Blog
-              </Link>
+              </NavLink>
             </li>
           </ul>
 
@@ -104,7 +104,7 @@ export const Nav = () => {
                 <div class="p-5 bg-white border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <Link
+                      <NavLink
                         href="/"
                         aria-label="Company"
                         title="Company"
@@ -128,7 +128,7 @@ export const Nav = () => {
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           CODE BOX
                         </span>
-                      </Link>
+                      </NavLink>
                     </div>
                     <div>
                       <button
@@ -149,44 +149,44 @@ export const Nav = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <Link
+                        <NavLink
                           to="/home"
                           aria-label="Our product"
                           title="Home"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/topics"
                           aria-label="Our product"
                           title="Topics"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Topics
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/statistic"
                           aria-label="Product pricing"
                           title="Statistic"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Statistic
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/blog"
                           aria-label="About us"
                           title="Blog"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Blog
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </nav>

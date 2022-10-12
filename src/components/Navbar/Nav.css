@@ -1,6 +1,13 @@
+.nav a{
+    color: white;
+    font-weight: 600;
+}
 .nav a:hover{
-    color: blue;
+    color: rgb(50, 50, 241);
 }
-.nav a:focus{
-    color: blue;
+.nav a.active{
+    color: rgb(50, 50, 241);
 }
+/* .nav a:focus{
+    color: blue;
+} */
