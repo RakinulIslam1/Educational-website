@@ -11,3 +11,9 @@
 /* .nav a:focus{
     color: blue;
 } */
+@media only screen and (max-width: 600px) {
+    .nav a {
+            color: black;
+            font-weight: 700;
+        }
+}
