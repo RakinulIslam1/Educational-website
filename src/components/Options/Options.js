@@ -2,16 +2,11 @@ import React from 'react';
 import './Options.css'
 import Swal from "sweetalert2";
 
-
-
-const Options = ({ option, correctAnswer, id }) => {
-  // console.log(option);
-  const ans = correctAnswer;
-  const wrg = id
-  const answer = (correctAnswer) => {
+const Options = ({ option, correctAnswer }) => {
+  
+  const answer = (option) => {
     
-    
-    if (ans === correctAnswer || wrg === id) {
+    if (option === correctAnswer) {
       Swal.fire("Good job!", "Your Answer is correct!", "success");
     }
     else {
@@ -24,10 +19,9 @@ const Options = ({ option, correctAnswer, id }) => {
     }
   };
   
-  
   return (
     <div className="optn  bg-gray-700">
-      <p onClick={answer} className="text-1xl font-semibold ">
+      <p onClick={()=>answer(option)} className="text-1xl font-semibold ">
         {option}
       </p>
     </div>

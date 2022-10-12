@@ -9,7 +9,7 @@
 6. tried to display a toastify when click on options.
 7. display a Rechart.
 
-====> Live site Link: 
+====> Live site Link: https://iridescent-cat-d814fb.netlify.app/
  -->
 
 

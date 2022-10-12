@@ -8,8 +8,8 @@ import './AllQuizzes.css'
  import "react-toastify/dist/ReactToastify.css";
 
 const AllQuizzes = ({ topicQuiz }) => {
-    console.log(topicQuiz);
-const { id, question, options, correctAnswer } = topicQuiz;
+const { question, options, correctAnswer } = topicQuiz;
+
 const icon = () =>{
 
 toast.success( correctAnswer, {
@@ -45,7 +45,6 @@ toast.success( correctAnswer, {
               key={option.id}
               option={option}
               correctAnswer={correctAnswer}
-              id={id}
             ></Options>
           ))}
           <ToastContainer></ToastContainer>
