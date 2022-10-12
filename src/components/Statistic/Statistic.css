@@ -1,3 +1,7 @@
-.grap{
-    width: 500px;
+
+@media only screen and (max-width: 600px) {
+    .grap{
+        margin-left: -350px;
+        width: 30%;
+    }
 }

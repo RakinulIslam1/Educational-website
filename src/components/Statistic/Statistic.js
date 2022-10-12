@@ -41,21 +41,16 @@ const Statistic = () => {
 
     return (
       <div>
-        <h1 className="text-3xl font-bold">WEBSITE RECHART</h1>
+        <h1 className="text-3xl font-bold mt-5">WEBSITE RECHART</h1>
 
-        <div>
-          <LineChart
-            width={600}
-            height={500}
-            data={data}
-            className="ml-80"
-          >
-            <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <CartesianGrid stroke="#ccc" />
-            <Tooltip></Tooltip>
-          </LineChart>
+        <div className="grap">
+            <LineChart width={600} height={400} data={data} className="ml-80">
+              <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <CartesianGrid stroke="#ccc" />
+              <Tooltip></Tooltip>
+            </LineChart>
         </div>
       </div>
     );
